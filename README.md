@@ -1,3 +1,3 @@
 # My-Portfolio
 
-deployed-site :- 
+deployed-site :- https://utkarshjaiswal.netlify.app/
