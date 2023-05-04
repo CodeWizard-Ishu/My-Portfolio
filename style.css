@@ -33,6 +33,9 @@ nav{
 .logo{
     width: 50px;
 }
+.logo:hover{
+    content: url("img/logo.png");
+}
 
 nav ul li{
     display: inline-block;
