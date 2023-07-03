@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UJ - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link id="theme" rel="stylesheet" type="text/css" href="dark-style.css">
     <script src="https://kit.fontawesome.com/87a138182c.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
 
@@ -14,9 +15,9 @@
 
     <div id="header">
         <div class="container">
-            <nav>
-                <a href="index.html" title="Utkarsh Jaiswal" >
-                    <img src="img/logo.png" class="logo" onclick="location.href='index.html'" alt="Utkarsh Jaiswal">
+            <nav id="navbar1">
+                <a>
+                    <img src="img/logo dark.png" class="logo" onclick="location.href='index.html'" alt="Utkarsh Jaiswal">
                 </a>
                 <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
@@ -26,13 +27,13 @@
                     <li><a href="#contact">Contact</a></li>
                     <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
+                <img src="img/sun.png" id="icon" onclick="toggleTheme()">
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <h3>Hi, I'm <br></h3>
-                <h1>Utkarsh Jaiswal <br></h1>
-                <h3>And I'm a <span>Frontend Developer</span></h3>
-                <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam <br>, illo sequi id quae repellat quia sapiente commodi!</p> -->
+                <h1>Utkarsh Jaiswal<br></h1>
+                <h3>And I'm a <span class="multiple-text"></span></h3>            
             </div>
         </div>
     </div>
@@ -47,7 +48,8 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>I am a competitive programmer and frontend developer currently pursuing B.Tech in Computer Science. I am deeply passionate about crafting visually appealing web applications with efficient coding. I continuously update my skills to deliver exceptional user experiences, combining my technical expertise with a strong drive for innovation.</p>
+                    <div class="about-list">
+                        <p>I am a competitive programmer and frontend developer currently pursuing B.Tech in Computer Science. I am deeply passionate about crafting visually appealing web applications with efficient coding. I continuously update my skills to deliver exceptional user experiences, combining my technical expertise with a strong drive for innovation.</p>
 
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -61,19 +63,13 @@
                             <li><span>Coding Skills</span><br>C/C++, Data Structures and Algorithm, Problem Solving</li>
                         </ul>
                     </div>
-                    <!-- <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>2021 - Current</span><br>UI/UX Design Training at ET Institute</li>
-                            <li><span>09/2021 - 11/2021</span><br>Team lead at StarApp LLC.</li>
-                            
-                        </ul>
-                    </div> -->
                     <div class="tab-contents" id="education">
                         <ul>
                             <li><span>2020-Current</span><br>B.Tech(CSE) from MMMUT, Gorakhpur</li>
                             <li><span>2019</span><br>Class 12 Intermediate</li>
                             <li><span>2017</span><br>Class 10 Highschool</li>
                         </ul>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -86,19 +82,19 @@
         <div class="container">
             <h1 class="sub-title">My Services</h1>
             <div class="services-list">
-                <div>
+                <div id="card" class="service-1">
                     <i class="fa-solid fa-code"></i>
                     <h2>Web Design</h2>
                     <p>I provide web design services to create visually appealing and user-friendly websites that drive results. Using modern tools and techniques, I craft seamless web experiences to enhance brand presence and engage visitors.</p>
                     <a href="https://github.com/CodeWizard-Ishu" target="_blank">Learn more</a>
                 </div>
-                <div>
+                <div id="card" class="service-2">
                     <i class="fa-sharp fa-solid fa-crop"></i>
                     <h2>UI Design</h2>
                     <p>I provide UI design services to create engaging and intuitive user interfaces that optimize user experience. Using modern design trends, I craft visually appealing UI designs for seamless interactions.</p>
                     <a href="https://github.com/CodeWizard-Ishu" target="_blank">Learn more</a>
                 </div>
-                <div>
+                <div id="card" class="service-3">
                     <i class="fa-brands fa-app-store"></i>
                     <h2>Leetcode DSA Questions</h2>
                     <p>I provide DSA (Data Structures and Algorithms) questions to assess technical skills and problem-solving abilities for coding interviews and competitions, enhancing candidates' readiness and performance.</p>
@@ -111,10 +107,10 @@
 <!-- ------------------------Portfolio---------------------- -->
     <div id="portfolio">
         <div class="container">
-            <h1 class="sub-tilte">My Work</h1>
+            <h1 class="sub-title my-work">My Work</h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="img/work-1.png" >
+                    <img id="work-1" src="img/work-1 dark.png" >
                     <div class="layer">
                         <h3>2D MERN Stack Web app puzzle game</h3>
                         <p>A virtual treasure hunt where users will have to piece together clues and riddles in order to find a key and find the map before anyone else.</p>
@@ -122,7 +118,7 @@
                     </div>
                 </div>
                 <div class="work">
-                    <img src="img/work-2.png" >
+                    <img id="work-2" src="img/work-2 dark.png" >
                     <div class="layer">
                         <h3>Netflix Clone App</h3>
                         <p>Netflix clone app: Stream movies & TV shows on-demand. Emulates popular Netflix platform. Watch anytime, anywhere.</p>
@@ -130,7 +126,7 @@
                     </div>
                 </div>
                 <div class="work">
-                    <img src="img/work-3.png" >
+                    <img id="work-3" src="img/work-3 dark.png" >
                     <div class="layer">
                         <h3>Tic Tac Toe</h3>
                         <p>Tic Tac Toe: Classic 2-player game. Place Xs or Os on 3x3 grid. Aim for 3 in a row. Fun and challenging!</p>
@@ -148,14 +144,14 @@
             <div class="row">
                 <div class="contact-left">
                     <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-solid fa-paper-plane"></i> utkarshjaiswal537@gmail.com</p>
-                    <p><i class="fa-solid fa-phone"></i> 6393105073</p>
+                    <p><i class="fa-solid fa-paper-plane"></i><a href="mailto:utkarshjaiswal537@gmail.com"> utkarshjaiswal537@gmail.com</a></p>
+                    <p><i class="fa-solid fa-phone"></i><a href="tel:6393105073"> +91 6393105073</a></p>
                     <div class="social-icons">
                         <a href="https://wa.me/+916393105073" target="_blank"><i class="fa-brands fa-whatsapp"></i></i></a>
                         <a href="https://www.instagram.com/utkarsh_jaiswal17/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                         <a href="https://www.linkedin.com/in/utkarsh-jaiswal-14703617a" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                     </div>
-                    <a href="img/Utkarsh Resume .pdf" download class="btn btn2">Download CV</a>
+                    <a href="img/Utkarsh Resume.pdf" download class="btn btn2">Download CV</a>
                 </div>
                 <div class="contact-right">
                     <form name="submit-to-google-sheet">
@@ -163,7 +159,7 @@
                         <input type="email" name="email" placeholder="Your Email" required>
                         <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                         <button type="submit
-                        " class="btn btn2">Submit</button>
+                        " class="btn btn2 submit-btn">Submit</button>
                     </form>
                     <span id="msg"></span>
                 </div>
@@ -207,23 +203,91 @@
 
     </script>
 
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxG7tAq3MdZ1jJuDv3CFekc9HSis593HVkvHF-_jBTVlxAWn8-bmPqiZ0Cjr6MG_776ow/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxG7tAq3MdZ1jJuDv3CFekc9HSis593HVkvHF-_jBTVlxAWn8-bmPqiZ0Cjr6MG_776ow/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
   
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message sent successfully.!!"
-            setTimeout(function(){
-                msg.innerHTML=""
-            },5000)
-            form.reset()
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully.!!"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
         })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
+    </script>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        const typed = new Typed('.multiple-text', {
+            strings: ['Web Developer', 'Competitive Programmer', 'Blogger'],
+            typeSpeed: 50,
+            backSpeed: 50,
+            backDelay: 1000,
+            loop: true
+        })
+    </script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script>
+        function toggleTheme(){
+            let theme = document.getElementsByTagName('link')[0];
+            let logo = document.querySelector(".logo");
+            let icon = document.getElementById("icon");
+            let work_1 = document.getElementById("work-1");
+            let work_2 = document.getElementById("work-2");
+            let work_3 = document.getElementById("work-3");
+            if(theme.getAttribute('href') == 'dark-style.css'){
+                theme.setAttribute('href', 'light-style.css');
+                logo.src = "img/logo light.png";
+                icon.src = "img/moon.png";
+                work_1.src = "img/work-1 light.png";
+                work_2.src = "img/work-2 light.png";
+                work_3.src = "img/work-3 light.png";
+            }
+            else{
+                theme.setAttribute('href', 'dark-style.css');
+                icon.src = "img/sun.png";
+                logo.src = "img/logo dark.png";
+                work_1.src = "img/work-1 dark.png";
+                work_2.src = "img/work-2 dark.png";
+                work_3.src = "img/work-3 dark.png";
+            }
+            
+        }
+    </script>
+
+    <script>
+        ScrollReveal({
+            reset: true ,
+            distance: '50px',
+            duration: 1500,
+            delay: 100
+        });
+
+        ScrollReveal().reveal('.header-text', {origin: 'left'});
+        ScrollReveal().reveal('.sub-title', {origin: 'top'});
+    </script>
+
+    <script>
+        window.onscroll = function() {myFunction()};
+        let navbar = document.getElementById("navbar1");
+        let sticky = navbar1.offsetTop;
+        function myFunction(){
+            if(window.pageYOffset >= sticky){
+                navbar1.classList.add("sticky")
+            }
+            else{
+                navbar1.classList.remove("sticky");
+            }
+        }
+    </script>
+
 </body>
 </html>
