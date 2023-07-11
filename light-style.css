@@ -36,11 +36,11 @@ body{
     position: fixed;
     top: 0;
     width: 100%;
-    padding-right: 20%;
-    padding-top: 10px;
 }
 
 nav{
+    padding-right: 20%;
+    padding-top: 10px;
     position: fixed;
     width: 100%;
     display: flex;
