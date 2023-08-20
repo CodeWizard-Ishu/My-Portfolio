@@ -119,7 +119,7 @@
                     <img id="work-2" src="img/work-2 dark.png" >
                     <div class="layer">
                         <h3>Netflix Clone App</h3>
-                        <p>Netflix clone app: Stream movies & TV shows on-demand. Emulates popular Netflix platform. Watch anytime, anywhere.</p>
+                        <p>This is a frontend clone app where user can check movies & TV shows on-demand. Emulates popular Netflix platform.</p>
                         <a href="https://netflix-clone-utkarsh.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
@@ -127,7 +127,7 @@
                     <img id="work-3" src="img/work-3 dark.png" >
                     <div class="layer">
                         <h3>Tic Tac Toe</h3>
-                        <p>Tic Tac Toe: Classic 2-player game. Place Xs or Os on 3x3 grid. Aim for 3 in a row. Fun and challenging!</p>
+                        <p>This is a basically classic 2-player game, where player place Xs or Os on 3x3 grid and aim for 3-Xs or 3-Os in a row.</p>
                         <a href="https://tic-tac-toe1710.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
@@ -238,14 +238,12 @@
             let theme = document.getElementsByTagName('link')[0];
             let logo = document.querySelector(".logo");
             let icon = document.getElementById("icon");
-            let work_1 = document.getElementById("work-1");
             let work_2 = document.getElementById("work-2");
             let work_3 = document.getElementById("work-3");
             if(theme.getAttribute('href') == 'dark-style.css'){
                 theme.setAttribute('href', 'light-style.css');
                 logo.src = "img/logo light.png";
                 icon.src = "img/moon.png";
-                work_1.src = "img/work-1 light.png";
                 work_2.src = "img/work-2 light.png";
                 work_3.src = "img/work-3 light.png";
             }
@@ -253,7 +251,6 @@
                 theme.setAttribute('href', 'dark-style.css');
                 icon.src = "img/sun.png";
                 logo.src = "img/logo dark.png";
-                work_1.src = "img/work-1 dark.png";
                 work_2.src = "img/work-2 dark.png";
                 work_3.src = "img/work-3 dark.png";
             }
