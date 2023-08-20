@@ -270,6 +270,7 @@ nav ul li a:hover::after{
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.3);
 }
 
 .work img{
@@ -352,6 +353,7 @@ nav ul li a:hover::after{
 
 .contact-right{
     flex-basis: 60%;
+    border-radius: 8px;
 }
 
 .contact-left p{
@@ -395,7 +397,10 @@ nav ul li a:hover::after{
 
 .submit-btn{
     margin-top: 10px;
+    font-size: 15px;
+    cursor: pointer;
 }
+
 .contact-right form{
     width: 100%;
 }
