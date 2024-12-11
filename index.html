@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UJ - Portfolio</title>
-    <link id="theme" rel="stylesheet" type="text/css" href="dark-style.css">
+    <link id="theme" rel="stylesheet" type="text/css" href="./css/dark-style.css">
     <script src="https://kit.fontawesome.com/87a138182c.js" crossorigin="anonymous"></script>
     
 </head>
@@ -239,15 +239,15 @@
             let icon = document.getElementById("icon");
             let work_2 = document.getElementById("work-2");
             let work_3 = document.getElementById("work-3");
-            if(theme.getAttribute('href') == 'dark-style.css'){
-                theme.setAttribute('href', 'light-style.css');
+            if(theme.getAttribute('href') == './css/dark-style.css'){
+                theme.setAttribute('href', './css/light-style.css');
                 logo.src = "img/logo light.png";
                 icon.src = "img/moon.png";
                 work_2.src = "img/work-2 light.png";
                 work_3.src = "img/work-3 light.png";
             }
             else{
-                theme.setAttribute('href', 'dark-style.css');
+                theme.setAttribute('href', './css/dark-style.css');
                 icon.src = "img/sun.png";
                 logo.src = "img/logo dark.png";
                 work_2.src = "img/work-2 dark.png";
